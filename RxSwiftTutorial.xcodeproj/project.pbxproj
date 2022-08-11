@@ -3,20 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		388750D0289B6D5300A45A00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388750CE289B6D5300A45A00 /* HomeViewController.swift */; };
+		388750D1289B6D5300A45A00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388750CF289B6D5300A45A00 /* HomeViewController.xib */; };
+		38DB0885289B820D00004B31 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0884289B820C00004B31 /* HomeViewModel.swift */; };
+		38DB0889289CB9AF00004B31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0887289CB9AF00004B31 /* DetailViewController.swift */; };
+		38DB088A289CB9AF00004B31 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DB0888289CB9AF00004B31 /* DetailViewController.xib */; };
+		38DB088E289CF32A00004B31 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB088C289CF32A00004B31 /* MusicListViewController.swift */; };
+		38DB088F289CF32A00004B31 /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DB088D289CF32A00004B31 /* MusicListViewController.xib */; };
+		38DB0891289CF33B00004B31 /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0890289CF33B00004B31 /* MusicListViewModel.swift */; };
+		38DB0895289CF42300004B31 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0893289CF42300004B31 /* MusicCell.swift */; };
+		38DB0896289CF42300004B31 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DB0894289CF42300004B31 /* MusicCell.xib */; };
+		38DB0899289CF68B00004B31 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0898289CF68B00004B31 /* Music.swift */; };
+		38F38A7228A0B0F300C03579 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F38A7128A0B0F300C03579 /* ApiManager.swift */; };
+		38F38A7528A0BD0600C03579 /* ProtocolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F38A7428A0BD0600C03579 /* ProtocolExt.swift */; };
+		38F38A7728A0ECA800C03579 /* UIImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F38A7628A0ECA800C03579 /* UIImageExt.swift */; };
 		D138509E24D5049500C5C263 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138509D24D5049500C5C263 /* AppDelegate.swift */; };
 		D13850A024D5049500C5C263 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D138509F24D5049500C5C263 /* SceneDelegate.swift */; };
 		D13850A724D5049700C5C263 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13850A624D5049700C5C263 /* Assets.xcassets */; };
 		D13850AA24D5049700C5C263 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13850A824D5049700C5C263 /* LaunchScreen.storyboard */; };
-		D13850B524D5056400C5C263 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13850B324D5056400C5C263 /* HomeViewController.swift */; };
-		D13850B624D5056400C5C263 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13850B424D5056400C5C263 /* HomeViewController.xib */; };
 		D9F8FF9472361E878837C5B0 /* Pods_RxSwiftTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46ADF859F11F483164109E2 /* Pods_RxSwiftTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		388750CE289B6D5300A45A00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		388750CF289B6D5300A45A00 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		38DB0884289B820C00004B31 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		38DB0887289CB9AF00004B31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		38DB0888289CB9AF00004B31 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		38DB088C289CF32A00004B31 /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
+		38DB088D289CF32A00004B31 /* MusicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListViewController.xib; sourceTree = "<group>"; };
+		38DB0890289CF33B00004B31 /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		38DB0893289CF42300004B31 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		38DB0894289CF42300004B31 /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		38DB0898289CF68B00004B31 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		38F38A7128A0B0F300C03579 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		38F38A7428A0BD0600C03579 /* ProtocolExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolExt.swift; sourceTree = "<group>"; };
+		38F38A7628A0ECA800C03579 /* UIImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExt.swift; sourceTree = "<group>"; };
+		38F97F9D289B6B88007DA910 /* RxSwiftBasic.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwiftBasic.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		793F8918CF7C647B014B781F /* Pods-RxSwiftTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTutorial.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftTutorial/Pods-RxSwiftTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		942B731C3E16949589CB64B1 /* Pods-RxSwiftTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftTutorial.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftTutorial/Pods-RxSwiftTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		C46ADF859F11F483164109E2 /* Pods_RxSwiftTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,8 +53,6 @@
 		D13850A624D5049700C5C263 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D13850A924D5049700C5C263 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D13850AB24D5049700C5C263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D13850B324D5056400C5C263 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D13850B424D5056400C5C263 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +67,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388750CD289B6D4100A45A00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				388750CE289B6D5300A45A00 /* HomeViewController.swift */,
+				388750CF289B6D5300A45A00 /* HomeViewController.xib */,
+				38DB0884289B820C00004B31 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		38DB0886289CB99800004B31 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				38DB0887289CB9AF00004B31 /* DetailViewController.swift */,
+				38DB0888289CB9AF00004B31 /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		38DB088B289CF31200004B31 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				38DB0892289CF40600004B31 /* Cells */,
+				38DB088C289CF32A00004B31 /* MusicListViewController.swift */,
+				38DB088D289CF32A00004B31 /* MusicListViewController.xib */,
+				38DB0890289CF33B00004B31 /* MusicListViewModel.swift */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
+		38DB0892289CF40600004B31 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38DB0893289CF42300004B31 /* MusicCell.swift */,
+				38DB0894289CF42300004B31 /* MusicCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		38DB0897289CF67E00004B31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38F38A7028A0B0DF00C03579 /* Core */,
+				38DB0898289CF68B00004B31 /* Music.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38F38A7028A0B0DF00C03579 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				38F38A7128A0B0F300C03579 /* ApiManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		38F38A7328A0BC9C00C03579 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				38F38A7428A0BD0600C03579 /* ProtocolExt.swift */,
+				38F38A7628A0ECA800C03579 /* UIImageExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		78C9C38BF4F4236A776468C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +146,6 @@
 				942B731C3E16949589CB64B1 /* Pods-RxSwiftTutorial.debug.xcconfig */,
 				793F8918CF7C647B014B781F /* Pods-RxSwiftTutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +170,9 @@
 		D138509C24D5049500C5C263 /* RxSwiftTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				38F38A7328A0BC9C00C03579 /* Ext */,
+				38DB0897289CF67E00004B31 /* Models */,
+				38F97F9D289B6B88007DA910 /* RxSwiftBasic.playground */,
 				D13850B124D5053400C5C263 /* AppDelegate */,
 				D13850B224D5054600C5C263 /* View */,
 				D13850A624D5049700C5C263 /* Assets.xcassets */,
@@ -102,8 +194,9 @@
 		D13850B224D5054600C5C263 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D13850B324D5056400C5C263 /* HomeViewController.swift */,
-				D13850B424D5056400C5C263 /* HomeViewController.xib */,
+				38DB088B289CF31200004B31 /* Musics */,
+				38DB0886289CB99800004B31 /* Detail */,
+				388750CD289B6D4100A45A00 /* Home */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +263,10 @@
 			files = (
 				D13850AA24D5049700C5C263 /* LaunchScreen.storyboard in Resources */,
 				D13850A724D5049700C5C263 /* Assets.xcassets in Resources */,
-				D13850B624D5056400C5C263 /* HomeViewController.xib in Resources */,
+				38DB088F289CF32A00004B31 /* MusicListViewController.xib in Resources */,
+				388750D1289B6D5300A45A00 /* HomeViewController.xib in Resources */,
+				38DB088A289CB9AF00004B31 /* DetailViewController.xib in Resources */,
+				38DB0896289CF42300004B31 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +321,16 @@
 			files = (
 				D138509E24D5049500C5C263 /* AppDelegate.swift in Sources */,
 				D13850A024D5049500C5C263 /* SceneDelegate.swift in Sources */,
-				D13850B524D5056400C5C263 /* HomeViewController.swift in Sources */,
+				38F38A7228A0B0F300C03579 /* ApiManager.swift in Sources */,
+				38DB088E289CF32A00004B31 /* MusicListViewController.swift in Sources */,
+				38DB0895289CF42300004B31 /* MusicCell.swift in Sources */,
+				38F38A7728A0ECA800C03579 /* UIImageExt.swift in Sources */,
+				38F38A7528A0BD0600C03579 /* ProtocolExt.swift in Sources */,
+				38DB0889289CB9AF00004B31 /* DetailViewController.swift in Sources */,
+				38DB0899289CF68B00004B31 /* Music.swift in Sources */,
+				388750D0289B6D5300A45A00 /* HomeViewController.swift in Sources */,
+				38DB0891289CF33B00004B31 /* MusicListViewModel.swift in Sources */,
+				38DB0885289B820D00004B31 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
