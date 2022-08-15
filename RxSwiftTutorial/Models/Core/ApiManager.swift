@@ -22,7 +22,13 @@ class ApiManager {
                 return Disposables.create()
             }
             let observable = Observable<URL>.just(path)
-                .map { URLRequest(url: $0) }
+                .map { path in
+                    var request = URLRequest(url: path)
+                    request.httpMethod = method.rawValue
+                    request.addValue("application/json", forHTTPHeaderField: "Content-type")
+                    return request
+
+                }
                 .flatMap { urlRequest -> Observable<(response: HTTPURLResponse, data: Data)> in
                     return URLSession.shared.rx.response(request: urlRequest)
                 }
@@ -64,3 +70,16 @@ extension ApiManager {
     }
 }
 
+enum APIError: Error {
+    case pathError
+    case error(String)
+    
+    var localizedDescription: String {
+        switch self {
+        case .pathError:
+            return "URL not found"
+        case .error(let errorMessage):
+            return errorMessage
+        }
+    }
+}

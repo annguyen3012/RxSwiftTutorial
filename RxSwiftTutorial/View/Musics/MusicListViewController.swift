@@ -110,17 +110,3 @@ extension MusicListViewController: UITableViewDelegate {
         70
     }
 }
-
-enum APIError: Error {
-    case pathError
-    case error(String)
-    
-    var localizedDescription: String {
-        switch self {
-        case .pathError:
-            return "URL not found"
-        case .error(let errorMessage):
-            return errorMessage
-        }
-    }
-}
