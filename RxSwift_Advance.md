@@ -134,7 +134,7 @@ final class MusicListViewModel {
 ```
 
 - Phần này gồm có model để map data theo kiểu json về thì mọi người xem ở phần code demo để hiểu rõ về chi tiết
-- Theo tính chất của `Single` nó phù hợp cho việc call API vì nó chỉ trả về hoặc là `.success(data)` hoặc là `.error(error)` để handle cho việc xử lý data và hiển thỉ lại `UI` hay là `error`.
+- Theo tính chất của `Single` nó phù hợp cho việc call API vì nó chỉ trả về hoặc là `.success(data)` hoặc là `.error(error)` để handle cho việc xử lý data và reload `UI` hay là show `error`.
 
 #### - Tiếp theo ở `viewController` chúng ta sẽ get data từ `viewModel`
 
@@ -194,7 +194,7 @@ private func setupTableView() {
 
 - Phần này là phần binding data vào tableView
 
-<img title="life cycle" alt="Connect API" src="./.imgs/connect_api.png" width="300">
+<img title="connect api" alt="Connect API" src="./.imgs/connect_api.png" width="300">
 
 ### Vậy là đã xong phần connect API
 
