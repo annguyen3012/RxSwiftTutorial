@@ -1,10 +1,10 @@
 PODS:
-  - RxCocoa (5.0.0):
+  - RxCocoa (5.1.3):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.0.0):
+  - RxRelay (5.1.3):
     - RxSwift (~> 5)
-  - RxSwift (5.0.0)
+  - RxSwift (5.1.3)
 
 DEPENDENCIES:
   - RxCocoa (~> 5)
@@ -17,10 +17,10 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
-  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
-  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
 
-PODFILE CHECKSUM: 44b5632f540ae314411e039fd1be52bea4edd2d8
+PODFILE CHECKSUM: 418cc7ed7d0c3cf939108477d92543647319f0e3
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2
