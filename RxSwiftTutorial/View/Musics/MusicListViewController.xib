@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicListViewController" customModule="RxSwiftTutorial" customModuleProvider="target">
             <connections>
+                <outlet property="loadingView" destination="cSa-CS-n6j" id="K0N-d2-aiz"/>
                 <outlet property="searchBar" destination="q5b-DC-Ie9" id="dNZ-zf-wbY"/>
                 <outlet property="tableView" destination="vhp-oD-fpT" id="m89-mP-4dZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,14 +30,23 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cSa-CS-n6j">
+                    <rect key="frame" x="172" y="413" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cSa-CS-n6j" secondAttribute="height" multiplier="1:1" id="2Ck-X1-EXy"/>
+                        <constraint firstAttribute="width" constant="70" id="FQm-tj-7wJ"/>
+                    </constraints>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="q5b-DC-Ie9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Q1W-1J-qsx"/>
+                <constraint firstItem="cSa-CS-n6j" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="RS8-Oe-84O"/>
                 <constraint firstItem="q5b-DC-Ie9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XDD-t9-Neu"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vhp-oD-fpT" secondAttribute="trailing" id="XUq-UL-CzV"/>
                 <constraint firstItem="vhp-oD-fpT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XZv-fR-NUw"/>
+                <constraint firstItem="cSa-CS-n6j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xm9-AM-b9O"/>
                 <constraint firstItem="q5b-DC-Ie9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nlb-m1-2aZ"/>
                 <constraint firstItem="vhp-oD-fpT" firstAttribute="top" secondItem="q5b-DC-Ie9" secondAttribute="bottom" id="nwK-TF-riH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vhp-oD-fpT" secondAttribute="bottom" id="tvE-TJ-Sha"/>

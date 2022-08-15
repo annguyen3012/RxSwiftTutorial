@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		388750D0289B6D5300A45A00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388750CE289B6D5300A45A00 /* HomeViewController.swift */; };
 		388750D1289B6D5300A45A00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388750CF289B6D5300A45A00 /* HomeViewController.xib */; };
+		388D0E4828A5062400817C7D /* DelegateProxyDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D0E4628A5062400817C7D /* DelegateProxyDemoViewController.swift */; };
+		388D0E4928A5062400817C7D /* DelegateProxyDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 388D0E4728A5062400817C7D /* DelegateProxyDemoViewController.xib */; };
+		38A474E628AA07FB004E9E5D /* DelegateForwardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A474E428AA07FB004E9E5D /* DelegateForwardViewController.swift */; };
+		38A474E728AA07FB004E9E5D /* DelegateForwardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38A474E528AA07FB004E9E5D /* DelegateForwardViewController.xib */; };
 		38DB0885289B820D00004B31 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0884289B820C00004B31 /* HomeViewModel.swift */; };
 		38DB0889289CB9AF00004B31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DB0887289CB9AF00004B31 /* DetailViewController.swift */; };
 		38DB088A289CB9AF00004B31 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DB0888289CB9AF00004B31 /* DetailViewController.xib */; };
@@ -31,6 +35,10 @@
 /* Begin PBXFileReference section */
 		388750CE289B6D5300A45A00 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		388750CF289B6D5300A45A00 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		388D0E4628A5062400817C7D /* DelegateProxyDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProxyDemoViewController.swift; sourceTree = "<group>"; };
+		388D0E4728A5062400817C7D /* DelegateProxyDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateProxyDemoViewController.xib; sourceTree = "<group>"; };
+		38A474E428AA07FB004E9E5D /* DelegateForwardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateForwardViewController.swift; sourceTree = "<group>"; };
+		38A474E528AA07FB004E9E5D /* DelegateForwardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateForwardViewController.xib; sourceTree = "<group>"; };
 		38DB0884289B820C00004B31 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		38DB0887289CB9AF00004B31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		38DB0888289CB9AF00004B31 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +83,24 @@
 				38DB0884289B820C00004B31 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		388D0E4528A505FF00817C7D /* Delegate Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				388D0E4628A5062400817C7D /* DelegateProxyDemoViewController.swift */,
+				388D0E4728A5062400817C7D /* DelegateProxyDemoViewController.xib */,
+			);
+			path = "Delegate Proxy";
+			sourceTree = "<group>";
+		};
+		38A474E328AA07E0004E9E5D /* Delegate Forward */ = {
+			isa = PBXGroup;
+			children = (
+				38A474E428AA07FB004E9E5D /* DelegateForwardViewController.swift */,
+				38A474E528AA07FB004E9E5D /* DelegateForwardViewController.xib */,
+			);
+			path = "Delegate Forward";
 			sourceTree = "<group>";
 		};
 		38DB0886289CB99800004B31 /* Detail */ = {
@@ -194,6 +220,8 @@
 		D13850B224D5054600C5C263 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				38A474E328AA07E0004E9E5D /* Delegate Forward */,
+				388D0E4528A505FF00817C7D /* Delegate Proxy */,
 				38DB088B289CF31200004B31 /* Musics */,
 				38DB0886289CB99800004B31 /* Detail */,
 				388750CD289B6D4100A45A00 /* Home */,
@@ -264,8 +292,10 @@
 				D13850AA24D5049700C5C263 /* LaunchScreen.storyboard in Resources */,
 				D13850A724D5049700C5C263 /* Assets.xcassets in Resources */,
 				38DB088F289CF32A00004B31 /* MusicListViewController.xib in Resources */,
+				38A474E728AA07FB004E9E5D /* DelegateForwardViewController.xib in Resources */,
 				388750D1289B6D5300A45A00 /* HomeViewController.xib in Resources */,
 				38DB088A289CB9AF00004B31 /* DetailViewController.xib in Resources */,
+				388D0E4928A5062400817C7D /* DelegateProxyDemoViewController.xib in Resources */,
 				38DB0896289CF42300004B31 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D138509E24D5049500C5C263 /* AppDelegate.swift in Sources */,
+				38A474E628AA07FB004E9E5D /* DelegateForwardViewController.swift in Sources */,
 				D13850A024D5049500C5C263 /* SceneDelegate.swift in Sources */,
 				38F38A7228A0B0F300C03579 /* ApiManager.swift in Sources */,
 				38DB088E289CF32A00004B31 /* MusicListViewController.swift in Sources */,
@@ -329,6 +360,7 @@
 				38DB0889289CB9AF00004B31 /* DetailViewController.swift in Sources */,
 				38DB0899289CF68B00004B31 /* Music.swift in Sources */,
 				388750D0289B6D5300A45A00 /* HomeViewController.swift in Sources */,
+				388D0E4828A5062400817C7D /* DelegateProxyDemoViewController.swift in Sources */,
 				38DB0891289CF33B00004B31 /* MusicListViewModel.swift in Sources */,
 				38DB0885289B820D00004B31 /* HomeViewModel.swift in Sources */,
 			);

@@ -18,7 +18,8 @@ final class HomeViewController: UIViewController {
     @IBOutlet private weak var inputTextField: UITextField!
     @IBOutlet private weak var changeButton: UIButton!
     @IBOutlet private weak var goToDetailButton: UIButton!
-
+    @IBOutlet private weak var delegateProxyButton: UIButton!
+    
     // MARK: - Properties
     let viewModel = HomeViewModel()
     
@@ -77,6 +78,12 @@ final class HomeViewController: UIViewController {
                 print("disposed")
             }
             .disposed(by: viewModel.disposeBag)
+        
+        delegateProxyButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.navigationController?.pushViewController(DelegateProxyDemoViewController(), animated: true)
+            })
+            .disposed(by: viewModel.disposeBag)
     }
 }
 
@@ -98,6 +105,7 @@ extension Reactive where Base: UIButton {
     }
 }
 
+// MARK: - Custome or create Binder
 //extension Reactive where Base: UILabel {
 //    var text: Binder<String> {
 //        return Binder(self.base) { label, text in

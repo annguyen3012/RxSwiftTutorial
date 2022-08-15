@@ -14,6 +14,7 @@ final class MusicListViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var loadingView: UIActivityIndicatorView!
     
     // MARK: - Properties
     var disposedBag: DisposeBag = DisposeBag()
@@ -25,6 +26,7 @@ final class MusicListViewController: UIViewController {
         setupUI()
         setupTableView()
         callAPI()
+        loadingView.startAnimating()
     }
     
     // MARK: - Private functions
@@ -38,7 +40,11 @@ final class MusicListViewController: UIViewController {
             if let urlString = element.artworkUrl100 {
                 cell.imageView?.image = UIImage(url: URL(string: urlString))
             }
-            cell.detailTextLabel?.text = element.artistName
+
+            if let lastIndexVisible = self.tableView.indexPathsForVisibleRows?.last,
+               lastIndexVisible.row == index {
+                self.viewModel.loadingReplay.accept(true)
+            }
         }
         .disposed(by: disposedBag)
         
@@ -52,24 +58,39 @@ final class MusicListViewController: UIViewController {
     private func setupUI() {
         title = "My Musics"
         searchBar.rx.text
-            .throttle(0.7, scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(700), scheduler: MainScheduler.instance)
             .subscribe(onNext: { element in
+                self.viewModel.loadingReplay.accept(false)
                 if let element = element {
                     print("search:", element)
-                    self.search(element)
+                    self.callAPI(element)
+//                    self.search(element)
+                }
+            }, onDisposed: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    print("here")
+                    self.viewModel.loadingReplay.accept(true)
                 }
             })
+            .disposed(by: disposedBag)
+        
+        viewModel.loadingReplay
+            .distinctUntilChanged()
+            .bind(to: loadingView.rx.isHidden)
             .disposed(by: disposedBag)
     
     }
     
-    private func callAPI() {
+    private func callAPI(_ query: String = "") {
         viewModel.getApiMusic()
             .subscribe { [weak self] data in
                 guard let this = self else { return }
+                this.viewModel.loadingReplay.accept(false)
                 this.viewModel.musics = data.results ?? []
-                this.viewModel.behaviorRelay.accept(this.viewModel.musics)
+                this.search(query)
+//                this.viewModel.behaviorRelay.accept(this.viewModel.musics)
             } onError: { error in
+                self.viewModel.loadingReplay.accept(true)
                 print(error.localizedDescription)
             }
             .disposed(by: disposedBag)

@@ -12,6 +12,7 @@ import RxRelay
 
 final class MusicListViewModel {
     var behaviorRelay: BehaviorRelay<[Music]> = .init(value: [])
+    var loadingReplay: BehaviorRelay<Bool> = .init(value: false)
     var musics: [Music] = []
     func getApiMusic() -> Single<FeedResults> {
         return ApiManager.shared.loadAPI(method: .get)
